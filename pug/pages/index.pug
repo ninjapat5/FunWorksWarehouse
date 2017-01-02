@@ -1,27 +1,26 @@
 doctype html
 html(lang='en')
-  include ../_templates/head.pug
-  +head("FunWorks Warehouse", "home.css")
-  body
-    include ../_templates/navbar.pug
-    +navbar("Home", true)
-    header.v-align-parent#home-header
-      .header-content.v-align-child
-        .header-content-inner
-          img(src="img/large-logo.png")
-          h1.text-center Fun for the whole family!
-          a.btn.btn-primary.btn-lg(href="#home-section") Learn More
-    section.section-light.v-align-parent
-      .container.v-align-child
-        .row
-          .col-lg-8.col-lg-offset-2.text-center#home-section
-            h2.section-heading The most fun warehouse in the world, guaranteed
-            hr.light
-            p.
-              Here at FunWorks Warehouse we make sure that there are activities for all ages.
-              From go Karts to laser tag, there is bound to be something fun to for each and every family member
-    
-    include ../_templates/footer.pug
-    +footer()
-    include ../_templates/scripts.pug
-    +scripts()
+	include ../_templates/head.pug
+	+head("FunWorks Warehouse", "home.css")
+	body
+		include ../_templates/navbar.pug
+		+navbar("Home", true)
+		header.v-align-parent#home-header
+			.header-content.v-align-child
+				.header-content-inner
+					img(src="img/large-logo.png")
+					h1.text-center Fun for the whole family!
+					a.btn.btn-primary.btn-lg(href="#home-section") Learn More
+		section.section-primary-color.v-align-parent#home-section
+			.container.v-align-child
+				.row
+					.col-md-6
+					.col-md-6.text-center
+						h1.section-heading The most fun warehouse in the world, guaranteed
+						hr.light
+						p Here at FunWorks Warehouse we make sure that there are activities for all ages. From go Karts to laser tag, there is bound to be something fun to for each and every family member
+		
+		include ../_templates/footer.pug
+		+footer()
+		include ../_templates/scripts.pug
+		+scripts()

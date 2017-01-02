@@ -29,9 +29,15 @@ header .btn {
   opacity: .75;
 }
 
-.section-light {
-  background-color: #009688;
-  color: #FFFFFF;
-  height: 33%;
+#home-section {
+  height: 100%;
   width: 100%;
+}
+
+#home-section h1 {
+  font-size: 3em;
+}
+
+#home-section p {
+  font-size: 1.75em;
 }
