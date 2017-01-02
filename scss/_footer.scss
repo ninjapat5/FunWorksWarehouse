@@ -1,0 +1,61 @@
+footer {
+	min-height: 250px;
+	width: 100%;
+}
+
+.copyright {
+	text-align: center;
+}
+
+.footer-contact {
+	text-align: center;
+}
+
+.phone {
+	a {
+		position: relative;
+		top: -10px;
+		left: 5px;
+	}
+}
+
+.email {
+	a {
+		position: relative;
+		top: -10px;
+		left: 5px;
+	}
+}
+
+.address {
+	a {
+		position: relative;
+		top: -20px;
+		left: 5px;
+	}
+	
+	@media(min-width: 768px) {
+		margin-top: 20px;
+	}
+}
+
+
+.social-media {
+	text-align: center;
+	ul {
+		list-style: none;
+		li {
+			display: inline-block;
+			margin: 0 5px;
+			i {
+				color: $primary-color;
+			}
+			i:hover, i:focus {
+				color: $primary-color-dark;
+			}
+		}
+		.instagram {
+			
+		}
+	}
+}

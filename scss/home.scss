@@ -1,0 +1,39 @@
+@import "pallette";
+
+header,
+header .header-content {
+	position: relative;
+	width: 100%;
+	text-align: center; 
+}
+
+header {
+	min-height: 100%;
+}
+
+header h1 {
+  font-size: 3em;
+}
+
+header .btn {
+  font-size: 1.75em;
+}
+
+#home-header {
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/header.jpg");
+  color: #fff;
+}
+ 
+.header-content img {
+  margin-top: 50px;
+  opacity: .75;
+}
+
+.section-light {
+	background-color: $primary-color;
+	color: $primary-color-text;
+	height: 33%;
+	width: 100%;
+} 

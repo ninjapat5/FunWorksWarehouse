@@ -1,0 +1,21 @@
+{
+  "name": "funworks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass scss/ -o public/css/ --output-style expanded",
+    "scss-production": "node-sass scss/ -o public/css/ --output-style compressed",
+    "scss-watch": "node-sass -w scss/ -o public/css/ --output-style expanded",
+    "pug": "pug pug/pages -o public/ --pretty",
+    "pug-watch": "pug -w pug/pages -o public/ --pretty"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^3.13.0",
+    "pug": "^2.0.0-beta6",
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}

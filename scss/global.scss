@@ -1,0 +1,57 @@
+@import "pallette";
+
+$navbar-transparent: transparent;
+$navbar-transparent-border: rgba(255,255,255,.6);	
+
+body,html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
+}
+
+.row {
+	margin: 0;
+}
+
+.v-align-parent {
+	display: table;
+	overflow: hidden;
+}
+
+.v-align-child {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.move_content_down {
+	padding-top: 60px;
+}
+
+.btn,
+.navbar-default,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Bangers','Helvetica Neue',Arial,sans-serif;
+	letter-spacing: 1px;
+}
+
+.section-light {
+	background-color: $primary-color;
+	color: $primary-color-text;
+	height: 33%;
+	width: 100%;
+} 
+
+
+@import "buttons";
+ 
+@import "navbar";
+
+@import "footer";

@@ -1,0 +1,11 @@
+.btn-primary {
+	background-color: $accent-color;
+	border-color: $accent-color;
+}
+
+.btn-primary:hover, 
+.btn-primary:focus, 
+.btn-primary:active {
+	background-color: $accent-color-dark;
+	border-color: $accent-color-dark;
+}

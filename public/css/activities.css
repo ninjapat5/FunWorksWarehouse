@@ -1,0 +1,89 @@
+/* #demo style - you can delete it */
+#demo {
+  position: relative;
+  margin: 30px auto;
+  width: 100%;
+  padding: 0;
+}
+
+/* core style - don't delete */
+.display-animation .col-md-4 {
+  padding: 0;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  border: none;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+}
+
+.display-animation .col-md-4 div {
+  width: 100%;
+  height: 50vh;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.display-animation .col-md-4:hover div {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.display-animation > .animated {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+  -o-transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+.no-js .display-animation > * {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+#go-karts {
+  background: url("../img/go-karts.jpg");
+}
+
+#laser-tag {
+  background: url("../img/laser-tag.jpg");
+}
+
+#mini-golf {
+  background: url("../img/mini-golf.jpg");
+}
+
+#rock-wall {
+  background: url("../img/rock-wall.jpg");
+}
+
+#snack-bar {
+  background: url("../img/snack-bar.jpg");
+}
+
+#childs-play-center {
+  background: url("../img/child-play-center.jpg");
+}
+
+figure img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+figure:hover img {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}

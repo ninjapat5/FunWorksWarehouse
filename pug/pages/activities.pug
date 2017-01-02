@@ -1,0 +1,28 @@
+doctype html
+html(lang='en')
+	include ../_templates/head.pug
+	+head("FunWorks Warehouse", "activities.css")
+	body
+		include ../_templates/navbar.pug
+		+navbar("Activities")
+		header
+			.header-content
+				.header-content-inner
+					#demo.display-animation.row
+						.col-md-4
+							#go-karts
+						.col-md-4
+							#laser-tag
+						.col-md-4
+							#mini-golf
+						.col-md-4
+							#rock-wall
+						.col-md-4
+							#snack-bar
+						.col-md-4
+							#childs-play-center
+		
+		include ../_templates/footer.pug
+		+footer()
+		include ../_templates/scripts.pug
+		+scripts("js/activities.js")

@@ -1,0 +1,24 @@
+doctype html
+html(lang='en')
+	include ../_templates/head.pug
+	+head("FunWorks Warehouse", "reserve.css")
+	body.move_content_down
+		include ../_templates/navbar.pug
+		+navbar("Reserve")
+		header.v-align-parent#reserve-header
+			.container.v-align-child
+				.row
+					.col-lg-8.col-lg-offset-2.text-center
+						h1 Planning a party?
+						h1 Check out our pricing rates!
+		section.v-align-parent.section-light#reserve-section
+			.container.v-align-child
+				.row
+					.col-md-2.text-center
+						p hello world
+					.col-md-2.text-center
+						p hello world
+		include ../_templates/footer.pug
+		+footer()
+		include ../_templates/scripts.pug
+		+scripts()

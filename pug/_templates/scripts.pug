@@ -1,0 +1,10 @@
+mixin scripts(...scripts)
+	// jQuery 
+	script(src="js/jquery-3.1.0.min.js")
+	// Bootstrap Core JavaScript 
+	script(src="js/bootstrap.min.js")
+	script(src="js/jquery.waypoints.min.js")
+	script(src="js/theme.js")
+	script(src="js/animations.js")
+	each script in scripts
+		script(src=script)
