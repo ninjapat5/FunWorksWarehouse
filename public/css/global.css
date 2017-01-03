@@ -21,7 +21,7 @@ body {
   vertical-align: middle;
 }
 
-.move_content_down {
+.move-content-down {
   padding-top: 60px;
 }
 
@@ -37,11 +37,32 @@ h6 {
   letter-spacing: 1px;
 }
 
+.hr-dark {
+  border: 1px solid #212121;
+}
+
 .section-primary-color {
   background-color: #009688;
   color: #FFFFFF;
-  height: 33%;
-  width: 100%;
+}
+
+.section-light {
+  background-color: #FFFFFF;
+  color: #212121;
+}
+
+.btn-default {
+  background-color: #009688;
+  border-color: #009688;
+  color: #FFFFFF;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active {
+  background-color: #00796B;
+  border-color: #00796B;
+  color: #FFFFFF;
 }
 
 .btn-primary {
@@ -54,6 +75,10 @@ h6 {
 .btn-primary:active {
   background-color: #2B71E6;
   border-color: #2B71E6;
+}
+
+.btn-lg {
+  font-size: 1.75em;
 }
 
 .navbar-default,

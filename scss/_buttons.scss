@@ -1,3 +1,17 @@
+.btn-default {
+	background-color: $primary-color;
+	border-color: $primary-color;
+	color: $primary-color-text;
+}
+
+.btn-default:hover, 
+.btn-default:focus, 
+.btn-default:active {
+	background-color: $primary-color-dark;
+	border-color: $primary-color-dark;
+	color: $primary-color-text;
+}
+
 .btn-primary {
 	background-color: $accent-color;
 	border-color: $accent-color;
@@ -8,4 +22,8 @@
 .btn-primary:active {
 	background-color: $accent-color-dark;
 	border-color: $accent-color-dark;
+}
+
+.btn-lg {
+	font-size: 1.75em;
 }

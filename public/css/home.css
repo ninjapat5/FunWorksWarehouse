@@ -9,8 +9,14 @@ header {
   min-height: 100%;
 }
 
-header h1 {
+header .header-content h1 {
   font-size: 3em;
+}
+
+@media (max-width: 768px) {
+  header .header-content h1 {
+    font-size: 2em;
+  }
 }
 
 header .btn {
@@ -29,15 +35,50 @@ header .btn {
   opacity: .75;
 }
 
-#home-section {
+@media (max-width: 900px) {
+  .header-content img {
+    height: 200px;
+  }
+}
+
+#home-activities {
   height: 100%;
   width: 100%;
 }
 
-#home-section h1 {
+#home-activities h1 {
   font-size: 3em;
 }
 
-#home-section p {
+#home-activities p {
   font-size: 1.75em;
+}
+
+#home-activities img {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1200px) {
+  #home-activities {
+    height: auto;
+  }
+}
+
+#home-about {
+  height: 100%;
+  width: 100%;
+  border-bottom: 1px solid #212121;
+  margin-bottom: 10px;
+}
+
+#home-about p {
+  font-size: 1.25em;
+}
+
+#home-about i {
+  color: #009688;
 }

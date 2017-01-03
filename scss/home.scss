@@ -11,8 +11,11 @@ header {
 	min-height: 100%;
 }
 
-header h1 {
+header .header-content h1 {
   font-size: 3em;
+  @media(max-width: 768px) {
+  	font-size: 2em;
+  }	
 }
 
 header .btn {
@@ -29,16 +32,43 @@ header .btn {
 .header-content img {
   margin-top: 50px;
   opacity: .75;
+  @media(max-width: 900px) {
+  	height: 200px;
+  }	
 }
 
-#home-section {
+#home-activities {
 	height: 100%;
 	width: 100%;
-
 	h1 {
 		font-size: 3em;
 	}
+
 	p {
 		font-size: 1.75em;
+	}
+
+	img {
+		display: block;
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 10px;
+	}
+	@media(max-width: 1200px) {
+		height: auto;
+	}
+}
+
+#home-about {
+	height: 100%;
+	width: 100%;
+	border-bottom: 1px solid $primary-text-color;
+	margin-bottom: 10px;
+	p {
+		font-size: 1.25em;
+	}
+	i {
+		color: $primary-color;
 	}
 }
