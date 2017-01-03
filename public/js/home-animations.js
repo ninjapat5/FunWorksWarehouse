@@ -5,6 +5,7 @@ $(document).ready(function(){
 	scrollAnimation("#home-about-header", "fadeInUp");
 	scrollAnimation("#home-about-hr", "fadeInUp");
 	scrollAnimation("#home-about-flag", "fadeInLeft");
+	scrollAnimation("#home-about-packages", "fadeInUp");
 	scrollAnimation("#home-about-card", "fadeInRight");
 });
 
