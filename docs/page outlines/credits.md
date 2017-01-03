@@ -15,4 +15,5 @@ https://www.glominigolf.com/photos-and-video/
 http://sparkleskennesaw.com/playground/
 http://sparkleskennesaw.com/laser-tag/
 https://commons.wikimedia.org/wiki/File:Pole_Position_Indoor_Karting,_Leeds.jpg
+Flickr
 
