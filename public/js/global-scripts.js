@@ -21,3 +21,11 @@ $(function() {
   });
 });
 
+// Animate on scroll
+function scrollAnimation(element, animation) {
+  var $element = $(element);
+  $element.css("opacity", 0);
+  $element.waypoint(function() {
+    $element.addClass("animated " + animation);
+  }, { offset: "70%"});
+}
