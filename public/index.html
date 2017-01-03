@@ -13,6 +13,8 @@
       <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
       <!--Font-awesome-->
       <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+      <!--Animate.css-->
+      <link rel="stylesheet" type="text/css" href="css/animate.css">
       <!--Global Styles-->
       <link rel="stylesheet" type="text/css" href="css/global.css">
       <!--Page specific styles-->
@@ -47,7 +49,7 @@
     <section class="section-primary-color v-align-parent" id="home-activities">
       <div class="container v-align-child">
         <div class="row">
-          <div class="col-lg-6 text-center"><br><br><br>
+          <div class="col-lg-6 text-center" id="home-activities-text"><br><br><br>
             <h1 class="section-heading">The most fun warehouse in the world, guaranteed</h1>
             <hr class="light">
             <p>
@@ -55,7 +57,7 @@
               From go Karts to laser tag, there is bound to be something fun to for each and every family member
             </p><br><br><a class="btn btn-primary btn-lg" href="activities.html">View Activites</a><br><br>
           </div>
-          <div class="col-lg-6"><img class="img-responsive img-thumbnail" src="img/home-arcade.jpg" alt=""></div>
+          <div class="col-lg-6" id="home-activities-img"><img class="img-responsive img-thumbnail" src="img/home-arcade.jpg" alt=""></div>
         </div>
       </div>
     </section>
@@ -63,14 +65,18 @@
       <div class="container v-align-child">
         <div class="row">
           <div class="col-md-6 col-md-offset-3 text-center">
-            <h1>Want to find out more about us?</h1><br>
-            <hr class="hr-dark">
+            <h1 id="home-about-header">Want to find out more about us?</h1><br>
+            <hr class="hr-dark" id="home-about-hr">
             <div class="row">
-              <div class="col-md-6"><br><br><i class="fa fa-flag fa-4x"></i>
-                <p>Go check out our about page</p><a class="btn btn-default btn-lg" href="about.html">About</a>
+              <div class="col-md-6">
+                <div id="home-about-flag"><br><br><i class="fa fa-flag"></i>
+                  <p>Go check out our about page</p><a class="btn btn-default btn-lg" href="about.html">About</a>
+                </div>
               </div>
-              <div class="col-md-6"><br><br><i class="fa fa-address-card fa-4x"></i>
-                <p>Feel free to contact us with any questions</p><a class="btn btn-default btn-lg" href="contact.hml">Contact</a>
+              <div class="col-md-6">
+                <div id="home-about-card"><br><br><i class="fa fa-address-card"></i>
+                  <p>Feel free to contact us with any questions</p><a class="btn btn-default btn-lg" href="contact.hml">Contact</a>
+                </div>
               </div>
             </div>
           </div>
@@ -117,11 +123,11 @@
           </div>
         </footer>
         <!-- jQuery -->
-        <script src="js/jquery-3.1.0.min.js"></script>
+        <script src="js/jquery-3.1.1.min.js"></script>
         <!-- Bootstrap Core JavaScript -->
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.waypoints.min.js"></script>
-        <script src="js/theme.js"></script>
-        <script src="js/animations.js"></script>
+        <script src="js/global-scripts.js"></script>
+        <script src="js/home-animations.js"></script>
   </body>
 </html>
