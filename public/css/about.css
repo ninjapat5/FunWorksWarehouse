@@ -1,3 +1,13 @@
+.well {
+  margin-top: 10px;
+}
+
 .well p {
   font-size: 17px;
+}
+
+.panel-primary > .panel-heading {
+  color: #fff;
+  background-color: #009688;
+  border-color: #009688;
 }
