@@ -1,66 +1,23 @@
-#reserve-header, #reserve-section {
+#reserve-header {
   width: 100%;
   height: 33%;
 }
 
-.color-violet .container-button {
-  background-color: #98f;
-}
-
-.color-violet .container-button:before {
-  background-color: #98f;
-}
-
-.color-violet .w-item span {
-  color: #98f;
-}
-
-.color-green .container-button {
-  background-color: #1bbc9d;
-}
-
-.color-green .container-button:before {
-  background-color: #1bbc9d;
-}
-
-.color-green .w-item span {
-  color: #1bbc9d;
-}
-
-.color-red .container-button {
-  background-color: #DB343A;
-}
-
-.color-red .container-button:before {
-  background-color: #DB343A;
-}
-
-.color-red .w-item span {
-  color: #DB343A;
-}
-
-.color-pink .container-button {
-  background-color: #E91E63;
-}
-
-.color-pink .container-button:before {
-  background-color: #E91E63;
-}
-
-.color-pink .w-item span {
-  color: #E91E63;
+#reserve-section {
+  width: 100%;
+  height: 33%;
 }
 
 .color-blue .container-button {
-  background-color: #3498db;
+  background-color: #448AFF;
 }
 
 .color-blue .container-button:before {
-  background-color: #3498db;
+  background-color: #448AFF;
 }
 
 .color-blue .w-item span {
-  color: #3498db;
+  color: #448AFF;
 }
 
 .w-table {
@@ -77,7 +34,7 @@
 .w-container {
   position: relative;
   max-width: 100%;
-  margin: 30px auto 0;
+  margin: 60px 0;
   font-size: 0;
   text-align: center;
 }
