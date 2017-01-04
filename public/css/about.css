@@ -1,3 +1,33 @@
+<<<<<<< HEAD
+.well {
+  margin-top: 10px;
+}
+
 .well p {
   font-size: 17px;
 }
+
+.panel-primary > .panel-heading {
+=======
+.about-section {
+  padding: 19px 0px;
+}
+
+.about-section p {
+  font-size: 17px;
+}
+
+.panel-primary .panel-heading {
+>>>>>>> master
+  color: #fff;
+  background-color: #009688;
+  border-color: #009688;
+}
+<<<<<<< HEAD
+=======
+
+.team-card {
+  background-color: #009688;
+  color: #fff;
+}
+>>>>>>> master
