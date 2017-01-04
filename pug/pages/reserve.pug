@@ -1,76 +1,77 @@
 doctype html
 html(lang='en')
 	include ../_templates/head.pug
-	+head("FunWorks Warehouse", "reserve.css")
+	+head("FunWorks Warehouse | Make a Reservation", "reserve.css")
 	body.move-content-down
 		include ../_templates/navbar.pug
 		+navbar("Reserve")
-		header.v-align-parent#reserve-header
-			.container.v-align-child
-				.row
-					.col-lg-8.col-lg-offset-2.text-center
-						h1 Planning a party?
-						h1 Check out our pricing rates!
+		#reserve
+			header.v-align-parent#reserve-header
+				.container.v-align-child
+					.row
+						.col-lg-8.col-lg-offset-2.text-center#reserve-header-text(style="opacity: 0;")
+							h1 Planning a party?
+							h1 Check out our packages!
 
-		section.v-align-parent.section-light#reserve-section
-			.container.v-align-child
-				.w-table
-					.w-table-cell
-						.w-container
-							.w-card.color-blue
-								.card-header
-									.w-title  Small - $14<br>Per Person
-									.container-button
-										a.w-button(href='http://codepen.io/Anna_Batura/', target='_blank') Reserve
-								.card-content
-									.w-item
-										span 2-5
-										|  People
-									.w-item
-										span 1hr
-										|  of access to activites
-									.w-item Includes buffet access
-							.w-card.color-blue
-								.card-header
-									.w-title  Medium - $12<br>Per Person
-									.container-button
-										a.w-button(href='http://codepen.io/Anna_Batura/', target='_blank') Reserve
-								.card-content
-									.w-item
-										span 6-12
-										|  People
-									.w-item
-										span 1hr
-										|  of access to activites
-									.w-item Includes buffet access
-							.w-card.color-blue
-								.card-header
-									.w-title  Large - $10<br>Per Person
-									.container-button
-										a.w-button(href='http://codepen.io/Anna_Batura/', target='_blank') Reserve
-								.card-content
-									.w-item
-										span 13-25
-										|  People
-									.w-item
-										span 1hr
-										|  of access to activites
-									.w-item Includes buffet access
-							.w-card.color-blue
-								.card-header
-									.w-title  Extra Large - $8<br>Per Person
-									.container-button
-										a.w-button(href='http://codepen.io/Anna_Batura/', target='_blank') Reserve
-								.card-content
-									.w-item
-										span 26-50
-										|  People
-									.w-item
-										span 1hr
-										|  of access to activites
-									.w-item Includes buffet access
+			section.v-align-parent.section-primary-color#reserve-section
+				.container.v-align-child
+					.w-table
+						.w-table-cell
+							.w-container
+								.w-card.color-blue#small(style="opacity: 0;")
+									.card-header
+										.w-title  Small - $14<br>Per Person
+										.container-button
+											a.w-button(href='http://codepen.io/Anna_Batura/', target='_blank') Reserve
+									.card-content
+										.w-item
+											span 2-5
+											|  People
+										.w-item
+											span 1hr
+											|  of access to activites
+										.w-item Buffet Included
+								.w-card.color-blue#medium(style="opacity: 0;")
+									.card-header
+										.w-title  Medium - $12<br>Per Person
+										.container-button
+											a.w-button(href='http://codepen.io/Anna_Batura/', target='_blank') Reserve
+									.card-content
+										.w-item
+											span 6-12
+											|  People
+										.w-item
+											span 1hr
+											|  of access to activites
+										.w-item Buffet Included
+								.w-card.color-blue#large(style="opacity: 0;")
+									.card-header
+										.w-title  Large - $10<br>Per Person
+										.container-button
+											a.w-button(href='http://codepen.io/Anna_Batura/', target='_blank') Reserve
+									.card-content
+										.w-item
+											span 13-25
+											|  People
+										.w-item
+											span 1hr
+											|  of access to activites
+										.w-item Buffet Included
+								.w-card.color-blue#x-large(style="opacity: 0;")
+									.card-header
+										.w-title  Extra Large - $8<br>Per Person
+										.container-button
+											a.w-button(href='http://codepen.io/Anna_Batura/', target='_blank') Reserve
+									.card-content
+										.w-item
+											span 26-50
+											|  People
+										.w-item
+											span 1hr
+											|  of access to activites
+										.w-item Buffet Included
 
 		include ../_templates/footer.pug
 		+footer()
 		include ../_templates/scripts.pug
-		+scripts()
+		+scripts("js/animations/reserve-animations.js")
