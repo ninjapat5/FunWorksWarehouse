@@ -10,6 +10,7 @@ StockSnap.io
 Trello
 Animate.css
 waypoints
+font awesome
 
 Photos:
 http://sparkleskennesaw.com/arcadeandstuffshop/
