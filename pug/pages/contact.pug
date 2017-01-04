@@ -34,12 +34,61 @@ html(lang='en')
 				.scroll-down-light
 		#connect.section-light.v-align-parent
 			.v-align-child
-				section.text-center.container
-					h1 Connect With Us
-					hr.hr-dark
+				.container.text-center
+					section
+						h1 Connect With Us
+						hr.hr-dark
+					.row
+						.col-md-2.col-md-offset-1
+							i.fa.fa-facebook-f(aria-hidden="true")
+							br
+							a.btn.btn-default.btn-lg Facebook
+						.col-md-2
+							i.fa.fa-twitter(aria-hidden="true")
+							br
+							a.btn.btn-default.btn-lg Twitter
+						.col-md-2
+							i.fa.fa-instagram(aria-hidden="true")
+							br
+							a.btn.btn-default.btn-lg Instagram
+						.col-md-2
+							i.fa.fa-google-plus(aria-hidden="true")
+							br
+							a.btn.btn-default.btn-lg Google+
+						.col-md-2
+							i.fa.fa-pinterest-p(aria-hidden="true")
+							br
+							a.btn.btn-default.btn-lg Pinterest
 		#form.section-primary-color.container.v-align-parent
 			.row.v-align-child
 				.col-md-8.col-md-offset-2.well
+					section
+						form.contact-form(action='')
+							.col-sm-12
+								h1.dark-text.text-center Drop us a line
+								br
+							.col-sm-6
+								.input-block
+									label(for='') First Name
+									input.form-control(type='text')
+							.col-sm-6
+								.input-block
+									label(for='') Last Name
+									input.form-control(type='text')
+							.col-sm-12
+								.input-block
+									label(for='') Email
+									input.form-control(type='text')
+							.col-sm-12
+								.input-block
+									label(for='') Message Subject
+									input.form-control(type='text')
+							.col-sm-12
+								.input-block.textarea
+									label(for='') Drop your message here
+									textarea.form-control(rows='3', type='text')
+							.col-sm-12
+								button.square-button.btn.btn-primary Send
 
 		
 		#map-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')

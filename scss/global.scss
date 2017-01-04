@@ -42,6 +42,14 @@ h6 {
 	letter-spacing: 1px;
 }
 
+.dark-text {
+	color: $primary-text-color;
+}
+
+.light-text {
+	color: $primary-color-text;
+}
+
 .hr-dark {
 	border: 1px solid $primary-text-color;
 }
