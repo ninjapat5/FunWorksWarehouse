@@ -1,10 +1,16 @@
 doctype html
 html(lang='en')
 	include ../_templates/head.pug
-	+head("FunWorks Warehouse", "create-reservation.css")
+	+head("FunWorks Warehouse | Make a Reservation | Create a Reservation", "reserve.css")
 	body
 		include ../_templates/navbar.pug
 		+navbar("Reserve")
+
+		#create-reservation.section-primary-color.v-align-parent
+			.v-align-child.container
+				.row
+					.col-md-8.col-md-offset-2
+						.well
 
 		include ../_templates/footer.pug
 		+footer()
