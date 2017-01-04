@@ -72,4 +72,7 @@ header .btn {
 		color: $primary-color;
 		font-size: 10em;
 	}
+	@media(max-width: 1000px) {
+		height: auto;
+	}
 }

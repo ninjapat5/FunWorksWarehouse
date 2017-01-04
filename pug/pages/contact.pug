@@ -1,12 +1,47 @@
 doctype html
 html(lang='en')
-  include ../_templates/head.pug
-  +head("FunWorks Warehouse", "contact.css")
-  body
-    include ../_templates/navbar.pug
-    +navbar("Contact")
-    
-    include ../_templates/footer.pug
-    +footer()
-    include ../_templates/scripts.pug
-    +scripts()
+	include ../_templates/head.pug
+	+head("FunWorks Warehouse", "contact.css")
+	body.move-content-down
+		include ../_templates/navbar.pug
+		+navbar("Contact")
+
+		header.container.text-center#get-in-touch(style="opacity: 0;")
+			h1 Get in touch
+			hr.hr-dark
+		section
+			.row
+				.col-md-4.col-md-offset-2.text-center#contact-info(style="opacity: 0;")
+					div.contact-phone
+						h3 Phone
+						a(href="tel:6577141234") (657) 714-1234
+					div.contact-address
+						h3 Address
+						a(href="http://bit.ly/funworkswarehouselocation") 19702-19710 Coastline Lane Huntington Beach, CA 92648
+					div.contact-email
+						h3 Email
+						a(href="mailto:info@funworkswarehouse.com") info@funworkswarehouse.com
+					div.contact-hours
+						h3 Hours
+						p Monday - Saturday, 10:00AM - 11:00
+				.col-md-4#map(style="opacity: 0;")
+					a(type='button', data-toggle='modal', data-target='#map-modal')
+						img.img-responsive(src="img/contact-map.jpg")
+		
+		#map-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
+			.modal-dialog(role='document')
+				.modal-content
+					.modal-header
+						button.close(type='button', data-dismiss='modal', aria-label='Close')
+							span(aria-hidden='true') &times;
+						h4#myModalLabel.modal-title Modal title
+					.modal-body  ...
+					.modal-footer
+						button.btn.btn-default(type='button', data-dismiss='modal') Close
+
+
+		
+		include ../_templates/footer.pug
+		+footer()
+		include ../_templates/scripts.pug
+		+scripts("js/animations/contact-animations.js")
