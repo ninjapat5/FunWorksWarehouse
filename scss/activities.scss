@@ -78,6 +78,13 @@
 	background: url("../img/play-ground.jpg");
 }
 
+.col-md-4-fix {
+	@media(min-width: 992px) {
+		position: relative;
+		left: -1px;
+	}
+}
+
 figure img {
 	-webkit-transform: scale(1);
 	transform: scale(1);
