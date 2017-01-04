@@ -5,36 +5,94 @@ html(lang='en')
 	body.move-content-down
 		include ../_templates/navbar.pug
 		+navbar("About")
-		.container
-			.text-center
-				h1 About Us
-				br
-				br
-				.row
-					.col-md-10.col-md-offset-1
-						p
-							| We are a Family Entertainment Center based in Huntington Beach, California. We have a strong focus on providing fun activities for all ages.
-				br
-				|  
-				img.img-responsive(src='../img/about/header.jpg')
-				br
-				.row
-					.col-md-10.col-md-offset-1
-						p
-							| We pride ourselves with the level of service and quality we are able to achieve at all of our locations. From the freshness of our food to the atmosphere of our arcades, rest assured that we pay attention to every detail to make sure that you have the best experience possible with your friends and family.
-				br
-				br
-				.panel.panel-primary
-					.panel-heading
-						h5.panel-title(style='font-size:26px;') Don&apos;t just take our word for it.
-					.panel-body
+		.section-light
+			.container
+				.about-section
+					.text-center
+						h1 About Us
+						br
+						br
+						.row
+							.col-md-10.col-md-offset-1
+								p We are a Family Entertainment Center based in Huntington Beach, California. We have a strong focus on providing fun activities for all ages.
+						br
+						img.img-responsive(src='../img/about/header.jpg')
+						br
+						.row
+							.col-md-10.col-md-offset-1
+								p We pride ourselves with the level of service and quality we are able to achieve at all of our locations. From the freshness of our food to the atmosphere of our arcades, rest assured that we pay attention to every detail to make sure that you have the best experience possible with your friends and family.
+						br
+						br
+						.panel.panel-primary
+							.panel-heading
+								h5.panel-title(style='font-size:26px;') Don&apos;t just take our word for it.
+							.panel-body
+								.row
+									.col-md-6
+										br
+										p Read what others are saying about FunWorksWarehouse!
+									.col-md-6
+										a.btn.btn-default.btn-lg(href='reviews.html') Reviews
+		.hr-dark
+		.section-primary-color
+			.container
+				.about-section
+					.text-center
+						h1  Meet the Team
+						br
 						.row
 							.col-md-6
-								br
-								p Read what others are saying about MissSpelt!
+								.team-card
+									img.img-responsive(src='../img/about/jonathon.jpg', alt='Jonathon Rogers')
+									.team-card-text
+										h3 Robbie
+										h5 Founder
+										p i wanted to earn some bad moneys
 							.col-md-6
-								a.btn.btn-default.btn-lg(href='reviews.html') Reviews
-			.hr-dark
+								.team-card
+									img.img-responsive(src='../img/about/brianna.jpg', alt='Brianna Thompson')
+									.team-card-text
+										h3 Rotten
+										h5 Co-Founder
+										p Example text
+		.hr-dark
+		.container
+			.about-section
+				.text-center
+					h1 Frequently Asked Questions
+					br
+					br
+					.row
+						.col-md-4.col-md-offset-1
+							i.fa.fa-question-circle-o.fa-4x.faq(aria-hidden='true')
+							h4 What kinds of games and activities are available?
+							p We maintain a variety of activities. You can head over to our  
+								a(href='activities.html')
+									b Activities 
+								| page to find out more about them.
+						.col-md-4.col-md-offset-2
+							i.fa.fa-question-circle-o.fa-4x.faq(aria-hidden='true')
+							h4 Do you have WiFi available?
+							p Yes we do! We wanted to make sure that sharing the fun moments you'll have at our entertainment center is easy.
+					br
+					.row
+						.col-md-4
+							i.fa.fa-question-circle-o.fa-4x.faq(aria-hidden='true')
+							h4 Are there any snacks available?
+							p Yes, there is a buffet that has more food than you can eat!
+						.col-md-4
+							i.fa.fa-question-circle-o.fa-4x.faq(aria-hidden='true')
+							h4 Do you offer discounts for parties?
+							p Yes we do! Head over to our
+								a(href='reserve.html')
+									b  Reserve
+								|  page and check out our party packages.
+						.col-md-4
+							i.fa.fa-question-circle-o.fa-4x.faq(aria-hidden='true')
+							h4 Is there a play place for young children?
+							p Yes we do! We offer a Child's Play Center at our location.
+		.hr-dark
+
 		include ../_templates/footer.pug
 		+footer()
 		include ../_templates/scripts.pug
