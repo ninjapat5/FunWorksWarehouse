@@ -71,11 +71,18 @@
 }
 
 #buffet {
-	background: url("../img/snack-bar.jpg");
+	background: url("../img/buffet.jpg");
 }
 
 #childs-play-center {
 	background: url("../img/play-ground.jpg");
+}
+
+.col-md-4-fix {
+	@media(min-width: 992px) {
+		position: relative;
+		left: -1px;
+	}
 }
 
 figure img {
