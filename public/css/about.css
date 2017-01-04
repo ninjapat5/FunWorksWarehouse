@@ -1,3 +1,18 @@
-.well p {
+.about-section {
+  padding: 19px 0px;
+}
+
+.about-section p {
   font-size: 17px;
+}
+
+.panel-primary .panel-heading {
+  color: #fff;
+  background-color: #009688;
+  border-color: #009688;
+}
+
+.team-card {
+  background-color: #009688;
+  color: #fff;
 }
