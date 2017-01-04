@@ -1,13 +1,27 @@
 @import "pallette";
 
-#reserve-header {
-	width: 100%;
-	height: 33%;
+#reserve {
+  width: 100%;
+  height: 100%;
+  #reserve-header {
+    width: 100%;
+    height: 30%;
+  }
+  #reserve-section {
+    width: 100%;
+    height: 70%;
+  }
+  @media(max-width: 1247px) {
+    height: auto;
+  }
 }
 
-#reserve-section {
-	width: 100%;
-	height: 33%;
+#create-reservation {
+  width: 100%;
+  height: 100%;
+  @media(max-width: 1247px) {
+    height: auto;
+  }
 }
 
 .color-blue .container-button {
