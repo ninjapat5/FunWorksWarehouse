@@ -5,7 +5,7 @@ html(lang='en')
 	body.move-content-down
 		include ../_templates/navbar.pug
 		+navbar("About")
-		container
+		.container
 			.well
 				.text-center
 					h1 About Us
@@ -35,6 +35,29 @@ html(lang='en')
 									p Read what others are saying about MissSpelt!
 								.col-md-6
 									a.btn.btn-default.btn-lg(href='reviews.html') Reviews
+			.hr-dark
+			.well
+				.text-center
+					h1  Meet the Team
+					br
+					.row
+						.col-md-6
+							.team-card
+								img.img-responsive(src='../img/about/jonathon.jpg', alt='Jonathon Rogers')
+								.team-card-text
+									h3 Robbie
+									h5 Founder
+									p
+										| pancreatic
+						.col-md-6
+							.team-card
+								img.img-responsive(src='../img/about/brianna.jpg', alt='Brianna Thompson')
+								.team-card-text
+									h3 Rotten
+									h5 Co-Founder
+									p
+										| I&rsquo;ve felt much healthier by cutting gluten out of my diet. Ever since then I&rsquo;ve promoted cooking gluten free foods. So when Jonathon came to me with the idea of MissSpelt! I felt that it was a fantastic opportunity to make the world a happier, healthier place.
+
 		include ../_templates/footer.pug
 		+footer()
 		include ../_templates/scripts.pug

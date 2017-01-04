@@ -1,5 +1,17 @@
 @import "pallette";
 
-.well p {
+.well{
+	background-color: #fff;
+	border: none;
+	padding-bottom:0;
+	p {
 	font-size: 17px;
+	}
+}
+.panel-primary{
+	.panel-heading {
+		color: #fff;
+		background-color: $primary-color;
+		border-color: $primary-color;
+	}
 }
