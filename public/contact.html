@@ -21,7 +21,7 @@
       <!--Page specific styles-->
       <link rel="stylesheet" type="text/css" href="css/contact.css">
     </head>
-  <body>
+  <body class="move-content-down">
         <nav class="navbar navbar-default navbar-fixed-top affix">
               <div class="container-fluid">
                 <div class="navbar-header">
@@ -40,6 +40,44 @@
                 </div>
               </div>
         </nav>
+    <header class="container text-center" id="get-in-touch" style="opacity: 0">
+      <h1>Get in touch</h1>
+      <hr class="hr-dark">
+    </header>
+    <section>
+      <div class="row">
+        <div class="col-md-4 col-md-offset-2 text-center" id="contact-info" style="opacity: 0">
+          <div class="contact-phone">
+            <h3>Phone</h3><a href="tel:6577141234">(657) 714-1234</a>
+          </div>
+          <div class="contact-address">
+            <h3>Address</h3><a href="http://bit.ly/funworkswarehouselocation">19702-19710 Coastline Lane Huntington Beach, CA 92648</a>
+          </div>
+          <div class="contact-email">
+            <h3>Email</h3><a href="mailto:info@funworkswarehouse.com">info@funworkswarehouse.com</a>
+          </div>
+          <div class="contact-hours">
+            <h3>Hours</h3>
+            <p>Monday - Saturday, 10:00AM - 11:00</p>
+          </div>
+        </div>
+        <div class="col-md-4" id="map" style="opacity: 0"><a type="button" data-toggle="modal" data-target="#map-modal"><img class="img-responsive" src="img/contact-map.jpg"></a></div>
+      </div>
+    </section>
+    <div class="modal fade" id="map-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+          </div>
+          <div class="modal-body"> ...</div>
+          <div class="modal-footer">
+            <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
         <footer class="v-align-parent">
           <div class="fluid-container v-align-child">
             <div class="row">
@@ -85,5 +123,6 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.waypoints.min.js"></script>
         <script src="js/global-scripts.js"></script>
+        <script src="js/animations/contact-animations.js"></script>
   </body>
 </html>

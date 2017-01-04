@@ -83,3 +83,9 @@ header .btn {
   color: #009688;
   font-size: 10em;
 }
+
+@media (max-width: 1000px) {
+  #home-about {
+    height: auto;
+  }
+}
