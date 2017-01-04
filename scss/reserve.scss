@@ -16,6 +16,14 @@
   }
 }
 
+#create-reservation {
+  width: 100%;
+  height: 100%;
+  @media(max-width: 1247px) {
+    height: auto;
+  }
+}
+
 .color-blue .container-button {
   background-color: $accent-color;
 }
