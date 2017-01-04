@@ -5,28 +5,42 @@ html(lang='en')
 	body.move-content-down
 		include ../_templates/navbar.pug
 		+navbar("Contact")
+		#contact.section-primary-color.v-align-parent
+			.v-align-child
+				header.container.text-center#get-in-touch(style="opacity: 0;")
+					h1 Get in touch
+					hr.hr-light
+					br
+					br
+					br
+				section
+					.row
+						.col-md-4.col-md-offset-2.text-center#contact-info(style="opacity: 0;")
+							div.contact-phone
+								h3 Phone
+								a(href="tel:6577141234") (657) 714-1234
+							div.contact-address
+								h3 Address
+								a(href="http://bit.ly/funworkswarehouselocation") 19702-19710 Coastline Lane Huntington Beach, CA 92648
+							div.contact-email
+								h3 Email
+								a(href="mailto:info@funworkswarehouse.com") info@funworkswarehouse.com
+							div.contact-hours
+								h3 Hours
+								p Monday - Saturday, 10:00AM - 11:00
+						.col-md-4#map(style="opacity: 0;")
+							a(type='button', data-toggle='modal', data-target='#map-modal')
+								img.img-responsive.img-thumbnail(src="img/contact-map.jpg")
+				.scroll-down-light
+		#connect.section-light.v-align-parent
+			.v-align-child
+				section.text-center.container
+					h1 Connect With Us
+					hr.hr-dark
+		#form.section-primary-color.container.v-align-parent
+			.row.v-align-child
+				.col-md-8.col-md-offset-2.well
 
-		header.container.text-center#get-in-touch(style="opacity: 0;")
-			h1 Get in touch
-			hr.hr-dark
-		section
-			.row
-				.col-md-4.col-md-offset-2.text-center#contact-info(style="opacity: 0;")
-					div.contact-phone
-						h3 Phone
-						a(href="tel:6577141234") (657) 714-1234
-					div.contact-address
-						h3 Address
-						a(href="http://bit.ly/funworkswarehouselocation") 19702-19710 Coastline Lane Huntington Beach, CA 92648
-					div.contact-email
-						h3 Email
-						a(href="mailto:info@funworkswarehouse.com") info@funworkswarehouse.com
-					div.contact-hours
-						h3 Hours
-						p Monday - Saturday, 10:00AM - 11:00
-				.col-md-4#map(style="opacity: 0;")
-					a(type='button', data-toggle='modal', data-target='#map-modal')
-						img.img-responsive(src="img/contact-map.jpg")
 		
 		#map-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
 			.modal-dialog(role='document')
@@ -34,8 +48,10 @@ html(lang='en')
 					.modal-header
 						button.close(type='button', data-dismiss='modal', aria-label='Close')
 							span(aria-hidden='true') &times;
-						h4#myModalLabel.modal-title Modal title
-					.modal-body  ...
+					.modal-body
+						#google-map
+							iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.370015352595!2d-118.0082596847949!3d33.673481980710726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd214d42eabb0f%3A0x13f107d24978ef2e!2s19702+Coastline+Ln%2C+Huntington+Beach%2C+CA+92648!5e0!3m2!1sen!2sus!4v1483493925939', frameborder='0', style='border:0', allowfullscreen='')
+
 					.modal-footer
 						button.btn.btn-default(type='button', data-dismiss='modal') Close
 

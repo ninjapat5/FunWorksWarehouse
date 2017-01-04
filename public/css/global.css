@@ -41,9 +41,22 @@ h6 {
   border: 1px solid #212121;
 }
 
+.hr-light {
+  border: 2px solid #FFFFFF;
+}
+
 .section-primary-color {
   background-color: #009688;
   color: #FFFFFF;
+}
+
+.section-primary-color a {
+  color: #b3cfff;
+}
+
+.section-primary-color a:hover,
+.section-primary-color a:focus {
+  color: #b3cfff;
 }
 
 .section-light {
@@ -54,27 +67,25 @@ h6 {
 .btn-default {
   background-color: #009688;
   border-color: #009688;
-  color: #FFFFFF;
+  color: #FFFFFF !important;
 }
 
-.btn-default:hover,
-.btn-default:focus,
-.btn-default:active {
+.btn-default:hover, .btn-default:focus, .btn-default:active {
   background-color: #00796B;
   border-color: #00796B;
-  color: #FFFFFF;
+  color: #FFFFFF !important;
 }
 
 .btn-primary {
   background-color: #448AFF;
   border-color: #448AFF;
+  color: #FFFFFF !important;
 }
 
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active {
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background-color: #2B71E6;
   border-color: #2B71E6;
+  color: #FFFFFF !important;
 }
 
 .btn-lg {
@@ -92,6 +103,7 @@ h6 {
   background-color: #009688;
   border-color: rgba(34, 34, 34, 0.05);
   height: 60px;
+  box-shadow: 0px 3px 5px #333;
 }
 
 .navbar-default.affix .navbar-nav li.active-tab, .navbar-default.affix .navbar-nav li:hover, .navbar-default.affix .navbar-nav li:focus {

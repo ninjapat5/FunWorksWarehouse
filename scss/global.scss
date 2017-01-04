@@ -1,7 +1,7 @@
 @import "pallette";
 
 $navbar-transparent: transparent;
-$navbar-transparent-border: rgba(255,255,255,.6);	
+$navbar-transparent-border: rgba(255,255,255,.6);
 
 body,html {
 	height: 100%;
@@ -46,9 +46,20 @@ h6 {
 	border: 1px solid $primary-text-color;
 }
 
+.hr-light {
+	border: 2px solid $primary-color-text;
+}
+
 .section-primary-color {
 	background-color: $primary-color;
 	color: $primary-color-text;
+	a {
+		color: $link
+	}
+	a:hover,
+	a:focus {
+		color: $link;
+	}
 }
 
 .section-light {
