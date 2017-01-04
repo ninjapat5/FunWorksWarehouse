@@ -9,7 +9,7 @@ $(document).ready(function() {
   scrollAnimation("#connect-instagram", "fadeInUp", 200);
   scrollAnimation("#connect-google-plus", "fadeInUp", 300);
   scrollAnimation("#connect-pinterest", "fadeInUp", 400);
-  scrollAnimation("#connect-scroll", "fadeInUp", 1400);
+  scrollAnimation("#connect-scroll", "fadeInUp", 1200);
   scrollAnimation("#form-well", "flipInX", 500);
 });
 

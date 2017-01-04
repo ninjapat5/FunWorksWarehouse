@@ -28,6 +28,7 @@ function scrollAnimation(element, animation, delay) {
   $element.waypoint(function() {
     if (typeof(delay) == "undefined") {
       $element.addClass("animated " + animation);
+      $element.addClass("opacity-fix");
     } else {
       setTimeout(function() {
         $element.addClass("animated " + animation);
