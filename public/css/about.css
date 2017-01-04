@@ -1,10 +1,8 @@
-.well {
-  background-color: #fff;
-  border: none;
-  padding-bottom: 0;
+.about-section {
+  padding: 19px 0px;
 }
 
-.well p {
+.about-section p {
   font-size: 17px;
 }
 
@@ -12,4 +10,9 @@
   color: #fff;
   background-color: #009688;
   border-color: #009688;
+}
+
+.team-card {
+  background-color: #009688;
+  color: #fff;
 }
