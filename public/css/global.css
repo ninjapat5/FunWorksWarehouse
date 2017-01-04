@@ -57,6 +57,10 @@ h6 {
   border: 2px solid #FFFFFF;
 }
 
+.opacity-fix {
+  opacity: 1 !important;
+}
+
 .scroll-down {
   margin: 15px 0;
   text-align: center;
