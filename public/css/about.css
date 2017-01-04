@@ -16,3 +16,10 @@
   background-color: #009688;
   color: #fff;
 }
+
+#about-us,
+#meet-team,
+#faq {
+  height: 100%;
+  width: 100%;
+}
