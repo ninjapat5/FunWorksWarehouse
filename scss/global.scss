@@ -1,7 +1,7 @@
 @import "pallette";
 
 $navbar-transparent: transparent;
-$navbar-transparent-border: rgba(255,255,255,.6);	
+$navbar-transparent-border: rgba(255,255,255,.6);
 
 body,html {
 	height: 100%;
@@ -42,13 +42,48 @@ h6 {
 	letter-spacing: 1px;
 }
 
+.dark-text {
+	color: $primary-text-color;
+}
+
+.light-text {
+	color: $primary-color-text;
+}
+
+.primary-text {
+	color: $primary-color;
+}
+
 .hr-dark {
 	border: 1px solid $primary-text-color;
+}
+
+.hr-light {
+	border: 2px solid $primary-color-text;
+}
+
+.opacity-fix {
+	opacity: 1 !important;
+}
+
+.scroll-down {
+	margin: 15px 0;
+	text-align: center;
+	i {
+		font-size: 3.5em !important;
+	}
 }
 
 .section-primary-color {
 	background-color: $primary-color;
 	color: $primary-color-text;
+	a {
+		color: $link
+	}
+	a:hover,
+	a:focus {
+		color: $link;
+	}
 }
 
 .section-light {

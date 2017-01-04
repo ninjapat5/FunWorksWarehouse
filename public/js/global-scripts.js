@@ -22,10 +22,18 @@ $(function() {
 });
 
 // Animate on scroll
-function scrollAnimation(element, animation) {
+function scrollAnimation(element, animation, delay) {
   var $element = $(element);
   $element.css("opacity", 0);
   $element.waypoint(function() {
-    $element.addClass("animated " + animation);
-  }, { offset: "70%"});
+    if (typeof(delay) == "undefined") {
+      $element.addClass("animated " + animation);
+      $element.addClass("opacity-fix");
+    } else {
+      setTimeout(function() {
+        $element.addClass("animated " + animation);
+        $element.addClass("opacity-fix");
+      }, delay);
+    }
+  }, { offset: "80%"});
 }
