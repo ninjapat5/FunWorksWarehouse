@@ -45,12 +45,25 @@ h6 {
   color: #FFFFFF;
 }
 
+.primary-text {
+  color: #009688;
+}
+
 .hr-dark {
   border: 1px solid #212121;
 }
 
 .hr-light {
   border: 2px solid #FFFFFF;
+}
+
+.scroll-down {
+  margin: 15px 0;
+  text-align: center;
+}
+
+.scroll-down i {
+  font-size: 3.5em !important;
 }
 
 .section-primary-color {

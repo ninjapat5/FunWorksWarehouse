@@ -50,12 +50,24 @@ h6 {
 	color: $primary-color-text;
 }
 
+.primary-text {
+	color: $primary-color;
+}
+
 .hr-dark {
 	border: 1px solid $primary-text-color;
 }
 
 .hr-light {
 	border: 2px solid $primary-color-text;
+}
+
+.scroll-down {
+	margin: 15px 0;
+	text-align: center;
+	i {
+		font-size: 3.5em !important;
+	}
 }
 
 .section-primary-color {
