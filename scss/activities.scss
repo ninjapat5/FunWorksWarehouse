@@ -8,9 +8,8 @@
 }
 
 .display-animation {
-	.col-md-4 {
+	.activity {
 		padding: 0;
-		cursor: pointer;
 	  overflow: hidden;
 	  position: relative;
 	  border: none;
@@ -30,12 +29,26 @@
 	  }
 	}
 
-	.col-md-4:hover {
+	.activity:hover {
 		div {
 			-webkit-transform: scale(1.3);
 			transform: scale(1.3);
 		}
 	}
+}
+
+.activity {
+	background: $primary-color;
+}
+
+.activity div {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.activity div:hover {
+	opacity: .4;
 }
 
 .display-animation > .animated {
@@ -47,6 +60,7 @@
   -o-transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
   transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
 }
+
 .no-js .display-animation > * {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
@@ -78,21 +92,10 @@
 	background: url("../img/play-ground.jpg");
 }
 
-.col-md-4-fix {
+.activity-fix {
 	@media(min-width: 992px) {
 		position: relative;
 		left: -1px;
 	}
 }
 
-figure img {
-	-webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
-
-figure:hover img {
-	-webkit-transform: scale(1.3);
-	transform: scale(1.3);
-}
