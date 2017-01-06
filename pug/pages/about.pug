@@ -6,96 +6,104 @@ html(lang='en')
 		include ../_templates/navbar.pug
 		+navbar("About")
 		.section-light.v-align-parent#about-us
-			.container.v-align-child
-				.about-section
-					.text-center
-						h1 About Us
-						.hr-dark
-						.row
-							.col-md-10.col-md-offset-1
-								p We are a Family Entertainment Center based in Huntington Beach, California. We have a strong focus on providing fun activities for all ages.
-						br
-						img#about-img.img-responsive(src='img/arcade-4.jpg')
-						br
-						.row
-							.col-md-10.col-md-offset-1
-								p We pride ourselves with the level of service and quality we are able to achieve at all of our locations. From the freshness of our food to the atmosphere of our arcades, rest assured that we pay attention to every detail to make sure that you have the best experience possible with your friends and family.
-						br
-						br
-						.panel.panel-primary
-							.panel-heading
-								h5.panel-title(style='font-size:26px;') Don&apos;t just take our word for it.
-							.panel-body
-								.row
-									.col-md-6
-										br
-										p Read what others are saying about FunWorksWarehouse!
-									.col-md-6
-										a.btn.btn-default.btn-lg(href='reviews.html') Reviews
-						.scroll-down#home-about-scroll
-							a(href="#meet-team")
-								i.fa.fa-chevron-down.dark-text(aria-hidden="true")
-
+			.v-align-child
+				.container
+					.about-section
+						.text-center
+							section#about-header(style="opacity: 0;")
+								h1 About Us
+								.hr-dark
+							.row
+								.col-md-10.col-md-offset-1
+									p#about-p We are a Family Entertainment Center based in Huntington Beach, California. We have a strong focus on providing fun activities for all ages.
+							br
+							img#about-img.img-responsive(src='img/arcade-4.jpg')
+							br
+							.row
+								.col-md-10.col-md-offset-1
+									p#about-p2 We pride ourselves with the level of service and quality we are able to achieve at all of our locations. From the freshness of our food to the atmosphere of our arcades, rest assured that we pay attention to every detail to make sure that you have the best experience possible with your friends and family.
+							br
+							br
+							.panel.panel-primary
+								.panel-heading
+									h5.panel-title(style='font-size:26px;') Don&apos;t just take our word for it.
+								.panel-body
+									.row
+										.col-md-6
+											br
+											p Read what others are saying about FunWorksWarehouse!
+										.col-md-6
+											a.btn.btn-default.btn-lg(href='reviews.html') Reviews
+							.scroll-down
+								a(href="#meet-team")
+									i.fa.fa-chevron-down.dark-text(aria-hidden="true")
 		.section-primary-color.v-align-parent#meet-team
-			.container.v-align-child
-				.about-section
-					.text-center
-						h1  Meet the Team
-						br
-						.row
-							.col-md-6
-								.team-card
-									img.img-responsive(src='img/meet-the-founders-2.jpg', alt='Chris McConnel')
-									.team-card-text
-										h3 Chris McConnel
-										h5 Founder
-										p As a kid I always loved to go to the local arcade and beat high scores. It was my passion. I wanted everyone to feel the joy that I felt when I was at the arcade that's why I created FunWorks Warehouse.
-							.col-md-6
-								.team-card
-									img.img-responsive(src='img/meet-the-founders-1.jpg', alt='Kaylee McConnel')
-									.team-card-text
-										h3 Kaylee McConnel
-										h5 Co-Founder
-										p Example text
+			.v-align-child
+				.container
+					.about-section
+						.text-center
+							h1  Meet the Team
+							.hr-light
+							br
+							.row
+								.col-md-6
+									.team-card
+										img.img-responsive(src='img/meet-the-founders-2.jpg', alt='Chris McConnel')
+										.team-card-text
+											h3 Chris McConnel
+											h5 Founder
+											p As a kid I always loved to go to the local arcade and beat high scores. It was my passion. I wanted everyone to feel the joy that I felt when I was at the arcade that's why I created FunWorks Warehouse.
+								.col-md-6
+									.team-card
+										img.img-responsive(src='img/meet-the-founders-1.jpg', alt='Kaylee McConnel')
+										.team-card-text
+											h3 Kaylee McConnel
+											h5 Co-Founder
+											p Example text
+							.scroll-down
+								a(href="#faq")
+									i.fa.fa-chevron-down.light-text(aria-hidden="true")
 		.section-light.v-align-parent#faq
-			.container.v-align-child
-				.about-section
-					.text-center
-						h1 Frequently Asked Questions
-						br
-						br
-						.row
-							.col-md-4.col-md-offset-1
-								i.fa.fa-question-circle-o.fa-4x.faq(aria-hidden='true')
-								h4 What kinds of games and activities are available?
-								p We maintain a variety of activities. You can head over to our  
-									a(href='activities.html')
-										b Activities 
-									| page to find out more about them.
-							.col-md-4.col-md-offset-2
-								i.fa.fa-question-circle-o.fa-4x.faq(aria-hidden='true')
-								h4 Do you have WiFi available?
-								p Yes we do! We wanted to make sure that sharing the fun moments you'll have at our entertainment center is easy.
-						br
-						.row
-							.col-md-4
-								i.fa.fa-question-circle-o.fa-4x.faq(aria-hidden='true')
-								h4 Are there any snacks available?
-								p Yes, there is a buffet that has more food than you can eat!
-							.col-md-4
-								i.fa.fa-question-circle-o.fa-4x.faq(aria-hidden='true')
-								h4 Do you offer discounts for parties?
-								p Yes we do! Head over to our
-									a(href='reserve.html')
-										b  Reserve
-									|  page and check out our party packages.
-							.col-md-4
-								i.fa.fa-question-circle-o.fa-4x.faq(aria-hidden='true')
-								h4 Is there a play place for young children?
-								p Yes there is! We offer a Child's Play Center at our location.
+			.v-align-child
+				.container
+					.about-section
+						.text-center
+							h1 Frequently Asked Questions
+							br
+							.hr-dark
+							br
+							.row
+								.col-md-4.col-md-offset-1
+									i.fa.fa-question-circle-o.fa-4x.faq(aria-hidden='true')
+									h4 What kinds of games and activities are available?
+									p We maintain a variety of activities. You can head over to our  
+										a(href='activities.html')
+											b Activities 
+										| page to find out more about them.
+								.col-md-4.col-md-offset-2
+									i.fa.fa-question-circle-o.fa-4x.faq(aria-hidden='true')
+									h4 Do you have WiFi available?
+									p Yes we do! We wanted to make sure that sharing the fun moments you'll have at our entertainment center is easy.
+							br
+							.row
+								.col-md-4
+									i.fa.fa-question-circle-o.fa-4x.faq(aria-hidden='true')
+									h4 Are there any snacks available?
+									p Yes, there is a buffet that has more food than you can eat!
+								.col-md-4
+									i.fa.fa-question-circle-o.fa-4x.faq(aria-hidden='true')
+									h4 Do you offer discounts for parties?
+									p Yes we do! Head over to our
+										a(href='reserve.html')
+											b  Reserve
+										|  page and check out our party packages.
+								.col-md-4
+									i.fa.fa-question-circle-o.fa-4x.faq(aria-hidden='true')
+									h4 Is there a play place for young children?
+									p Yes there is! We offer a Child's Play Center at our location.
 		.hr-dark
 
 		include ../_templates/footer.pug
 		+footer()
 		include ../_templates/scripts.pug
-		+scripts()
+		+scripts("js/animations/about-animations.js")
