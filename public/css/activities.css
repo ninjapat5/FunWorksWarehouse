@@ -1,53 +1,28 @@
 #activities {
-  position: relative;
-  margin: 30px auto;
   width: 100%;
+  height: 100%;
+}
+
+#activities .col-md-4 {
   padding: 0;
 }
 
-.display-animation .col-md-4 {
-  padding: 0;
-  cursor: pointer;
-  overflow: hidden;
-  position: relative;
-  border: none;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  -o-transform: scale(0);
-  transform: scale(0);
+@media (max-width: 991px) {
+  #activities {
+    height: auto;
+  }
 }
 
-.display-animation .col-md-4 div {
-  width: 100%;
+.activity {
   height: 50vh;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-  background-position: center;
-  background-repeat: no-repeat;
+  width: 100%;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
 }
 
-.display-animation .col-md-4:hover div {
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
-}
-
-.display-animation > .animated {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
-  -o-transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
-  transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
-}
-
-.no-js .display-animation > * {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1);
+.activity .activity-learn-more {
+  width: 100%;
+  height: 100%;
 }
 
 #go-karts {
@@ -72,23 +47,4 @@
 
 #childs-play-center {
   background: url("../img/play-ground.jpg");
-}
-
-@media (min-width: 992px) {
-  .col-md-4-fix {
-    position: relative;
-    left: -1px;
-  }
-}
-
-figure img {
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-}
-
-figure:hover img {
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
 }
