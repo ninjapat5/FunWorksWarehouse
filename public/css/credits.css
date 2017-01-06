@@ -4,7 +4,23 @@
   padding-bottom: 45px;
 }
 
-.text-center > p,
-.text-center > a {
-  font-size: 1.75em;
+#credits .well {
+  margin-top: 90px;
+}
+
+#credits p {
+  font-size: 1.25em;
+}
+
+#credits a {
+  color: #448AFF;
+}
+
+#credits-contents h2 {
+  text-align: center;
+}
+
+#credits-contents p {
+  text-align: left;
+  font-size: 1.1em;
 }

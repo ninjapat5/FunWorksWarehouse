@@ -1,9 +1,29 @@
+@import "pallette";
+
 .section-primary-color{
 	min-height: 100%;
 	width: 100%;
 	padding-bottom: 45px;
 }
-.text-center>p,
-.text-center>a {
-	font-size: 1.75em;
+
+#credits {
+	.well {
+		margin-top: 90px;;
+	}
+	p {
+		font-size: 1.25em;
+	}
+	a {
+		color: $accent-color;
+	}
+}
+
+#credits-contents {
+	h2 {
+		text-align: center
+	}
+	p {
+		text-align: left;
+		font-size: 1.1em;
+	}
 }
