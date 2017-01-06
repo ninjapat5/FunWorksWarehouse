@@ -13,38 +13,125 @@ html(lang='en')
 						.v-align-parent.activity-learn-more
 							.v-align-child.text-center
 								h1.light-text Go-Karts
-								buttun.btn.btn-default.btn-lg Learn More
+								buttun.btn.btn-default.btn-lg(type='button', data-toggle='modal', data-target='#go-kart-modal') Learn More
 				.col-md-4
 					.activity#laser-tag
 						.v-align-parent.activity-learn-more
 							.v-align-child.text-center
 								h1.light-text Laser Tag
-								buttun.btn.btn-default.btn-lg Learn More
+								buttun.btn.btn-default.btn-lg(type='button', data-toggle='modal', data-target='#laser-tag-modal') Learn More
 				.col-md-4
 					.activity#mini-golf
 						.v-align-parent.activity-learn-more
 							.v-align-child.text-center
 								h1.light-text Mini-Golf
-								buttun.btn.btn-default.btn-lg Learn More
+								buttun.btn.btn-default.btn-lg(type='button', data-toggle='modal', data-target='#mini-golf-modal') Learn More
 				.col-md-4
 					.activity#arcade
 						.v-align-parent.activity-learn-more
 							.v-align-child.text-center
 								h1.light-text Arcade
-								buttun.btn.btn-default.btn-lg Learn More
+								buttun.btn.btn-default.btn-lg(type='button', data-toggle='modal', data-target='#arcade-modal') Learn More
 				.col-md-4
 					.activity#buffet
 						.v-align-parent.activity-learn-more
 							.v-align-child.text-center
 								h1.light-text Buffet
-								buttun.btn.btn-default.btn-lg Learn More
+								buttun.btn.btn-default.btn-lg(type='button', data-toggle='modal', data-target='#buffet-modal') Learn More
 				.col-md-4
 					.activity#childs-play-center
 						.v-align-parent.activity-learn-more
 							.v-align-child.text-center
 								h1.light-text Childs Play Center
-								buttun.btn.btn-default.btn-lg Learn More
-		
+								buttun.btn.btn-default.btn-lg(type='button', data-toggle='modal', data-target='#childs-play-center-modal') Learn More
+
+		#go-kart-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='go-kart-modal')
+			.modal-dialog(role='document')
+				.modal-content
+					.modal-header
+						h1.text-center Go-Karts
+						button.close(type='button', data-dismiss='modal', aria-label='Close')
+							span(aria-hidden='true') &times;
+					.modal-body
+						p.
+							Come race your friends at our go kart race track.
+							With 16 cars available for a race, you'll be sure to find some competition.
+							Every race is 3 laps to give each contestant a fair chance to win.
+							If you make it to the top 3 then you get a free lap!
+					.modal-footer
+						button.btn.btn-default(type='button', data-dismiss='modal') Close
+		#laser-tag-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='laser-tag-modal')
+			.modal-dialog(role='document')
+				.modal-content
+					.modal-header
+						h1.text-center Laser Tag
+						button.close(type='button', data-dismiss='modal', aria-label='Close')
+							span(aria-hidden='true') &times;
+					.modal-body
+						p.
+							Our laser tag arena spans over 500 square feet with lots of places to hide and ambush your friends.
+							Most games are 5 vs 5 but we have the gear to go up to a 10 vs 10 if you have a large party.
+							Just remember to make a reservation if you have a large party so we can make sure that everything is ready.
+					.modal-footer
+						button.btn.btn-default(type='button', data-dismiss='modal') Close
+		#mini-golf-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='mini-golf-modal')
+			.modal-dialog(role='document')
+				.modal-content
+					.modal-header
+						h1.text-center Mini Golf
+						button.close(type='button', data-dismiss='modal', aria-label='Close')
+							span(aria-hidden='true') &times;
+					.modal-body
+						p.
+							If you are looking to just spend some relaxing time with your family, then mini golf is the way to go.
+							We offer an 18 hole course complete with windmills and dinosaurs.
+							We also made sure to include different size putters to allow everyone the chance to play.
+					.modal-footer
+						button.btn.btn-default(type='button', data-dismiss='modal') Close
+		#arcade-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='arcade-modal')
+			.modal-dialog(role='document')
+				.modal-content
+					.modal-header
+						h1.text-center Arcade
+						button.close(type='button', data-dismiss='modal', aria-label='Close')
+							span(aria-hidden='true') &times;
+					.modal-body
+						p.
+							Come race your friends at our go kart race track.
+							With 16 cars available for a race, you'll be sure to find some competition.
+							Every race is 3 laps to give each contestant a fair chance to win.
+							If you make it to the top 3 then you get a free lap!
+					.modal-footer
+						button.btn.btn-default(type='button', data-dismiss='modal') Close
+		#buffet-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='buffet-modal')
+			.modal-dialog(role='document')
+				.modal-content
+					.modal-header
+						h1.text-center Buffet
+						button.close(type='button', data-dismiss='modal', aria-label='Close')
+							span(aria-hidden='true') &times;
+					.modal-body
+						p.
+							Come race your friends at our go kart race track.
+							With 16 cars available for a race, you'll be sure to find some competition.
+							Every race is 3 laps to give each contestant a fair chance to win.
+							If you make it to the top 3 then you get a free lap!
+					.modal-footer
+						button.btn.btn-default(type='button', data-dismiss='modal') Close
+		#childs-play-center-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='childs-play-center-modal')
+			.modal-dialog(role='document')
+				.modal-content
+					.modal-header
+						h1.text-center Child's Play Center
+						button.close(type='button', data-dismiss='modal', aria-label='Close')
+							span(aria-hidden='true') &times;
+					.modal-body
+						p.
+							Even if you have small children we still have a place for them to play and have tons of fun.
+							From jungle gyms to ball pits it's sure to be a blast.
+							We also have cubbies with optional combination locks to keep your child's small items safe while they are playing.
+					.modal-footer
+						button.btn.btn-default(type='button', data-dismiss='modal') Close
 		include ../_templates/footer.pug
 		+footer()
 		include ../_templates/scripts.pug

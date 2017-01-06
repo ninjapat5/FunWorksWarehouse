@@ -6,6 +6,10 @@
   .col-md-4 {
   	padding: 0;
   }
+
+  @media (max-width: 991px) {
+  	height: auto;
+  }
 }
 
 .activity {

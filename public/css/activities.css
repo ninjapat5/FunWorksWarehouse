@@ -7,6 +7,12 @@
   padding: 0;
 }
 
+@media (max-width: 991px) {
+  #activities {
+    height: auto;
+  }
+}
+
 .activity {
   height: 50vh;
   width: 100%;

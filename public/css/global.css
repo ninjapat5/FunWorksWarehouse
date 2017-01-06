@@ -252,8 +252,15 @@ h6 {
 }
 
 footer {
-  min-height: 250px;
+  height: 200px;
   width: 100%;
+}
+
+@media (max-width: 991px) {
+  footer {
+    padding: 15px 0;
+    height: auto;
+  }
 }
 
 .copyright {
@@ -264,28 +271,13 @@ footer {
   text-align: center;
 }
 
-.phone a {
-  position: relative;
-  top: -10px;
-  left: 5px;
+.footer-contact h1 {
+  margin-top: 0;
 }
 
-.email a {
+.footer-contact p.phone a {
   position: relative;
-  top: -10px;
-  left: 5px;
-}
-
-.address a {
-  position: relative;
-  top: -20px;
-  left: 5px;
-}
-
-@media (min-width: 768px) {
-  .address {
-    margin-top: 20px;
-  }
+  top: -15px;
 }
 
 .social-media {
