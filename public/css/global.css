@@ -257,9 +257,11 @@ h6 {
   padding: 5px 15px;
 }
 
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-  background-color: #009688;
-  border: none;
+@media (max-width: 769px) {
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    background-color: #009688;
+    border: none;
+  }
 }
 
 footer {

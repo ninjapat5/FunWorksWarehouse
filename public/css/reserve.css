@@ -13,7 +13,7 @@
   height: 70%;
 }
 
-@media (max-width: 1247px) {
+@media (max-width: 1247px), (max-height: 700px) {
   #reserve {
     height: auto;
   }
@@ -24,8 +24,8 @@
   height: 100%;
 }
 
-@media (max-width: 1247px) {
-  #create-reservation, #reservation-created {
+@media (max-width: 1247px), (max-height: 700px) {
+  #create-reservation {
     height: auto;
   }
 }
@@ -36,6 +36,12 @@
 
 #reservation-created p {
   font-size: 2.5em;
+}
+
+@media (max-width: 991px), (max-height: 700px) {
+  #create-form {
+    margin-top: 20px;
+  }
 }
 
 .color-blue .container-button {

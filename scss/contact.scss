@@ -3,7 +3,7 @@
 #contact, #connect, #form {
 	width: 100%;
 	height: 100%;
-	@media(max-width: 900px) {
+	@media(max-width: 900px), (max-height: 650px) {
 		height: auto;
 	}
 }
@@ -50,4 +50,10 @@
 	}
 }
 
+#form-well {
+	@media(max-width: 991px), (max-height: 688px) {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+}
 

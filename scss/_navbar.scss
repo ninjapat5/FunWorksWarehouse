@@ -67,7 +67,9 @@
 	padding: 5px 15px;
 }
 
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+@media (max-width: 769px) {
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
     background-color: $primary-color;
     border: none;
+	}
 }

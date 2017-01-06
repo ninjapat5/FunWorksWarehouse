@@ -1,8 +1,8 @@
 $(document).ready(function() {
   scrollAnimation("#about-header", "fadeIn", 100, 99);
   scrollAnimation("#about-img", "fadeInRight", 800, 99);
-  scrollAnimation("#about-p2", "fadeInLeft", 2000, 99);
-  scrollAnimation("#about-scroll", "fadeInUp",2500, 99);
+  scrollAnimation("#about-p2", "fadeInLeft", 1000, 99);
+  scrollAnimation("#about-scroll", "fadeInUp",1200, 99);
   scrollAnimation("#meet-header","fadeIn", 100, 80);
   scrollAnimation("#team-card0","fadeInLeft", 0, 80);
   scrollAnimation("#team-card1","fadeInRight", 0, 80);
