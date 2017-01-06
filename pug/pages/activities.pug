@@ -5,22 +5,45 @@ html(lang='en')
 	body
 		include ../_templates/navbar.pug
 		+navbar("Activities")
-		header
-			.header-content
-				.header-content-inner
-					#activities.display-animation.row
-						.col-md-4.activity
-							#go-karts
-						.col-md-4.activity
-							#laser-tag
-						.col-md-4.activity.activity-fix
-							#mini-golf
-						.col-md-4.activity
-							#arcade
-						.col-md-4.activity
-							#buffet
-						.col-md-4.activity.avtivity-fix
-							#childs-play-center
+
+		#activities
+			.row
+				.col-md-4
+					.activity#go-karts
+						.v-align-parent.activity-learn-more
+							.v-align-child.text-center
+								h1.light-text Go-Karts
+								buttun.btn.btn-default.btn-lg Learn More
+				.col-md-4
+					.activity#laser-tag
+						.v-align-parent.activity-learn-more
+							.v-align-child.text-center
+								h1.light-text Laser Tag
+								buttun.btn.btn-default.btn-lg Learn More
+				.col-md-4
+					.activity#mini-golf
+						.v-align-parent.activity-learn-more
+							.v-align-child.text-center
+								h1.light-text Mini-Golf
+								buttun.btn.btn-default.btn-lg Learn More
+				.col-md-4
+					.activity#arcade
+						.v-align-parent.activity-learn-more
+							.v-align-child.text-center
+								h1.light-text Arcade
+								buttun.btn.btn-default.btn-lg Learn More
+				.col-md-4
+					.activity#buffet
+						.v-align-parent.activity-learn-more
+							.v-align-child.text-center
+								h1.light-text Buffet
+								buttun.btn.btn-default.btn-lg Learn More
+				.col-md-4
+					.activity#childs-play-center
+						.v-align-parent.activity-learn-more
+							.v-align-child.text-center
+								h1.light-text Childs Play Center
+								buttun.btn.btn-default.btn-lg Learn More
 		
 		include ../_templates/footer.pug
 		+footer()
