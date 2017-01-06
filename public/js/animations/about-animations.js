@@ -5,4 +5,8 @@ $(document).ready(function() {
   scrollAnimation("#about-p2", "fadeIn", 100);
   scrollAnimation("#panel", "fadeInUp", 400);
   scrollAnimation("#about-scroll", "fadeInUp", 500);
+  scrollAnimation("","")
+  scrollAnimation("","")
+  scrollAnimation("","")
+  scrollAnimation("","")
 });
