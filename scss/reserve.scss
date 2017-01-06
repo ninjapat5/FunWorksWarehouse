@@ -16,12 +16,22 @@
   }
 }
 
-#create-reservation {
+#create-reservation, #reservation-created {
   width: 100%;
   height: 100%;
   @media(max-width: 1247px) {
     height: auto;
   }
+}
+
+#reservation-created {
+	h1 {
+		font-size: 4em;
+	} 
+
+	p {
+		font-size: 2.5em;
+	}
 }
 
 .color-blue .container-button {
@@ -154,3 +164,14 @@
   opacity: 1;
 }
 
+select {
+	/*for firefox*/
+	-moz-appearance: none;
+	/*for chrome*/
+	-webkit-appearance:none;
+}
+
+/*for IE10*/
+select::-ms-expand {
+	display: none;
+}
