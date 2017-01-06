@@ -1,0 +1,10 @@
+.section-primary-color {
+  min-height: 100%;
+  width: 100%;
+  padding-bottom: 45px;
+}
+
+.text-center > p,
+.text-center > a {
+  font-size: 1.75em;
+}
