@@ -22,8 +22,6 @@ html(lang='en')
 							.row
 								.col-md-10.col-md-offset-1
 									p#about-p2(style="opacity: 0;") We pride ourselves with the level of service and quality we are able to achieve at all of our locations. From the freshness of our food to the atmosphere of our arcades, rest assured that we pay attention to every detail to make sure that you have the best experience possible with your friends and family.
-							br
-							br
 							.scroll-down#about-scroll
 								a(href="#meet-team")
 									i.fa.fa-chevron-down.dark-text(aria-hidden="true")
@@ -32,25 +30,26 @@ html(lang='en')
 				.container
 					.about-section
 						.text-center
-							h1  Meet the Team
-							.hr-light
+							section#meet-header(style="opacity: 0;")
+								h1  Meet the Team
+								.hr-light
 							br
 							.row
 								.col-md-4.col-md-offset-1
-									.team-card
-										img.img-responsive(src='img/meet-the-founders-2.jpg', alt='Chris McConnel')
+									.team-card#team-card0
+										img.img-responsive(src='img/meet-the-founders-3.jpg', alt='Chris McConnel')
 										.team-card-text
 											h3 Chris McConnel
 											h5 Founder
 											p As a kid I always loved to go to the local arcade and beat high scores. It was my passion. I wanted everyone to feel the joy that I felt when I was at the arcade that's why I created FunWorks Warehouse.
 								.col-md-4.col-md-offset-2
-									.team-card
-										img.img-responsive(src='img/meet-the-founders-1.jpg', alt='Kaylee McConnel')
+									.team-card#team-card1
+										img.img-responsive(src='img/meet-the-founders-4.jpg', alt='Kaylee McConnel')
 										.team-card-text
 											h3 Kaylee McConnel
 											h5 Co-Founder
 											p When Chris came to me with the idea of FunWorks Warehouse I was so excited. I wanted everyone to be able to have the fun that we had as kids. I fell in love with it as soon as I heard the name. The atmosphere is truly one-of-a-kind.
-							.scroll-down
+							.scroll-down#meet-scroll
 								a(href="#faq")
 									i.fa.fa-chevron-down.light-text(aria-hidden="true")
 		.section-light.v-align-parent#faq
@@ -58,36 +57,37 @@ html(lang='en')
 				.container
 					.about-section
 						.text-center
-							h1 Frequently Asked Questions
-							br
-							.hr-dark
+							section#faq-header
+								h1 Frequently Asked Questions
+								br
+								.hr-dark
 							br
 							.row
-								.col-md-4.col-md-offset-1
+								.col-md-4.col-md-offset-1#faq0
 									i.fa.fa-question-circle-o.fa-4x.faq(aria-hidden='true')
 									h4 What kinds of games and activities are available?
 									p We maintain a variety of activities. You can head over to our  
 										a(href='activities.html')
 											b Activities 
 										| page to find out more about them.
-								.col-md-4.col-md-offset-2
+								.col-md-4.col-md-offset-2#faq1
 									i.fa.fa-question-circle-o.fa-4x.faq(aria-hidden='true')
 									h4 Do you have WiFi available?
 									p Yes we do! We wanted to make sure that sharing the fun moments you'll have at our entertainment center is easy.
 							br
 							.row
-								.col-md-4
+								.col-md-4#faq2
 									i.fa.fa-question-circle-o.fa-4x.faq(aria-hidden='true')
 									h4 Are there any snacks available?
 									p Yes, there is a buffet that has more food than you can eat!
-								.col-md-4
+								.col-md-4#faq3
 									i.fa.fa-question-circle-o.fa-4x.faq(aria-hidden='true')
 									h4 Do you offer discounts for parties?
 									p Yes we do! Head over to our
 										a(href='reserve.html')
 											b  Reserve
 										|  page and check out our party packages.
-								.col-md-4
+								.col-md-4#faq4
 									i.fa.fa-question-circle-o.fa-4x.faq(aria-hidden='true')
 									h4 Is there a play place for young children?
 									p Yes there is! We offer a Child's Play Center at our location.
