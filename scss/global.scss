@@ -12,6 +12,12 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
+.move-content-down {
+	@media(max-width: 991px) {
+		padding-top: 60px;
+	}
+}
+
 .row {
 	margin: 0;
 }

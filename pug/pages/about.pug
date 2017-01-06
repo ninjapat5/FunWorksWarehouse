@@ -2,7 +2,7 @@ doctype html
 html(lang='en')
 	include ../_templates/head.pug
 	+head("FunWorks Warehouse", "about.css")
-	body
+	body.move-content-down
 		include ../_templates/navbar.pug
 		+navbar("About")
 		.section-light.v-align-parent#about-us
@@ -13,9 +13,9 @@ html(lang='en')
 							section#about-header(style="opacity: 0;")
 								h1 About Us
 								.hr-dark
-							.row
-								.col-md-10.col-md-offset-1
-									p#about-p We are a Family Entertainment Center based in Huntington Beach, California. We have a strong focus on providing fun activities for all ages.
+								.row
+									.col-md-10.col-md-offset-1
+										p We are a Family Entertainment Center based in Huntington Beach, California. We have a strong focus on providing fun activities for all ages.
 							br
 							img#about-img.img-responsive(src='img/arcade-5.jpg')
 							br
