@@ -1,13 +1,18 @@
 doctype html
 html(lang='en')
 	include ../_templates/head.pug
-	+head("FunWorks Warehouse", "thank-you.css")
-	body
+	+head("FunWorks Warehouse | Thank You", "thank-you.css")
+	body.move-content-down
+		include ../_templates/navbar.pug
+		+navbar("Contact")
 		.section-primary-color.v-align-parent 
 			.v-align-child
-				.container
-					.text-center
-						h1 Thank You
+				.container.text-center.thank-you
+						h1 Thanks!
 						p We will get back with you shortly
 						a.btn.btn-primary.btn-lg(href='index.html') Home
+	include ../_templates/footer.pug
+	+footer()
+	include ../_templates/scripts.pug
+	+scripts()
 

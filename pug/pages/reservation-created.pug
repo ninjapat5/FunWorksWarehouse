@@ -1,0 +1,18 @@
+doctype html
+html(lang='en')
+	include ../_templates/head.pug
+	+head("FunWorks Warehouse | Make a Reservation | Reservation Created", "reserve.css")
+	body.move-content-down
+		include ../_templates/navbar.pug
+		+navbar("Reserve")
+
+		#reservation-created.section-primary-color.v-align-parent
+			.v-align-child
+				.container.text-center
+					h1 Reservation Created!
+					p We'll see you soon!
+					a(href="index.html").btn.btn-primary.btn-lg Home
+		include ../_templates/footer.pug
+		+footer()
+		include ../_templates/scripts.pug
+		+scripts()
