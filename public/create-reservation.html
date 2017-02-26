@@ -63,43 +63,43 @@
       <div class="v-align-child">
         <div class="row">
           <div class="col-md-8 col-md-offset-2 well" id="create-form">
-            <form class="material-form" action="reservation-created.html" method="POST">
+            <form class="material-form" action="reservation-created.html" method="POST" onsubmit="return checkInfo();" name="create">
               <div class="col-sm-12">
                 <h1 class="dark-text text-center">Create a reservation</h1><br>
               </div>
               <div class="col-sm-6">
                 <div class="input-block">
-                  <label for="">First Name</label>
-                  <input class="form-control" type="text">
+                  <label for="first-name">First Name</label>
+                  <input class="form-control" id="first-name" type="text" name="first-name">
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="input-block">
-                  <label for="">Last Name</label>
-                  <input class="form-control" type="text">
+                  <label for="last-name">Last Name</label>
+                  <input class="form-control" id="last-name" type="text" name="last-name">
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="input-block">
-                  <label for="">Email</label>
-                  <input class="form-control" type="text">
+                  <label for="email">Email</label>
+                  <input class="form-control" id="email" type="text" name="email">
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="input-block">
-                  <label for="">Number of people</label>
-                  <input class="form-control" type="number">
+                  <label for="people">Number of people</label>
+                  <input class="form-control" id="people" type="number" name="people">
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="input-block">
-                  <label for="">Date (mm/dd/yyyy)</label>
+                  <label for="date">Date (mm/dd/yyyy)</label>
                   <input class="form-control" id="datetimepicker" type="text" name="date">
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="input-block">
-                  <label for="">Time</label>
+                  <label for="time">Time</label>
                   <select class="form-control" id="time" name="time">
                     <option label=" "></option>
                     <option value="10:00 A.M.">10:00 A.M.</option>
@@ -120,7 +120,7 @@
                 </div>
               </div>
               <div class="col-sm-12">
-                <input class="square-button btn btn-primary" type="submit" value="Submit">
+                <input class="square-button btn btn-primary" id="form-submit" type="submit" value="Submit">
               </div>
             </form>
           </div>
@@ -163,5 +163,6 @@
         <script src="js/jquery.waypoints.min.js"></script>
         <script src="js/global-scripts.js"></script>
         <script src="js/date-time.js"></script>
+        <script src="js/reserve.js"></script>
   </body>
 </html>
