@@ -68,32 +68,32 @@ html(lang='en')
 			.row.v-align-child
 				.col-md-8.col-md-offset-2.well#form-well
 					section
-						form.material-form(action="thank-you.html", method="POST")
+						form.material-form(action="thank-you.php", method="POST")
 							.col-sm-12
 								h1.dark-text.text-center Drop us a line
 								br
 							.col-sm-6
 								.input-block
 									label(for='') First Name
-									input.form-control(type='text')
+									input.form-control(type='text' name='name1')
 							.col-sm-6
 								.input-block
 									label(for='') Last Name
-									input.form-control(type='text')
+									input.form-control(type='text' name='name2')
 							.col-sm-12
 								.input-block
 									label(for='') Email
-									input.form-control(type='text')
+									input.form-control(type='text' name='email0')
 							.col-sm-12
 								.input-block
 									label(for='') Message Subject
-									input.form-control(type='text')
+									input.form-control(type='text' name='subject')
 							.col-sm-12
 								.input-block.textarea
 									label(for='') Drop your message here
-									textarea.form-control(rows='3', type='text')
+									textarea.form-control(rows='3', type='text' name='message')
 							.col-sm-12
-								button.square-button.btn.btn-primary Send
+								input#form-submit.square-button.btn.btn-primary(type="submit", value="Send")
 		#map-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
 			.modal-dialog(role='document')
 				.modal-content
