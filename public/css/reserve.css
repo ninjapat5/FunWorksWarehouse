@@ -44,6 +44,18 @@
   }
 }
 
+#error-message {
+  display: none;
+  text-align: center;
+  padding: 4px;
+  margin-bottom: 10px;
+  background-color: #e74c3c;
+}
+
+#error-message p {
+  margin: 0;
+}
+
 .color-blue .container-button {
   background-color: #448AFF;
 }
