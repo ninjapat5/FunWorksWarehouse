@@ -30,7 +30,7 @@
 #reservation-created {
 	h1 {
 		font-size: 4em;
-	} 
+	}
 
 	p {
 		font-size: 2.5em;
@@ -40,6 +40,17 @@
 #create-form {
 	@media(max-width: 991px), (max-height: 700px) {
     margin-top: 20px;
+  }
+}
+
+#error-message {
+  display: none;
+  text-align: center;
+  padding: 4px;
+  margin-bottom: 10px;
+  background-color: $warning;
+  p {
+    margin: 0;
   }
 }
 
