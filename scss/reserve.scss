@@ -9,18 +9,48 @@
   }
   #reserve-section {
     width: 100%;
-    height: 70%;
+    height: 100%;
   }
-  @media(max-width: 1247px) {
+  @media(max-width: 1247px), (max-height: 700px) {
     height: auto;
   }
 }
 
-#create-reservation {
+#create-reservation, #reservation-created {
   width: 100%;
   height: 100%;
-  @media(max-width: 1247px) {
-    height: auto;
+}
+
+#create-reservation {
+	@media(max-width: 1247px), (max-height: 700px) {
+    height: 100%;
+  }
+}
+
+#reservation-created {
+	h1 {
+		font-size: 4em;
+	}
+
+	p {
+		font-size: 2.5em;
+	}
+}
+
+#create-form {
+	@media(max-width: 991px), (max-height: 700px) {
+    margin-top: 20px;
+  }
+}
+
+#error-message {
+  display: none;
+  text-align: center;
+  padding: 4px;
+  margin-bottom: 10px;
+  background-color: $warning;
+  p {
+    margin: 0;
   }
 }
 
@@ -53,7 +83,6 @@
   text-align: center;
 }
 .w-container .w-card {
-  cursor: pointer;
   background-color: #fff;
   display: inline-block;
   vertical-align: top;
@@ -154,3 +183,14 @@
   opacity: 1;
 }
 
+select {
+	/*for firefox*/
+	-moz-appearance: none;
+	/*for chrome*/
+	-webkit-appearance:none;
+}
+
+/*for IE10*/
+select::-ms-expand {
+	display: none;
+}

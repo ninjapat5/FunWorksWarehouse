@@ -22,7 +22,8 @@ $(function() {
 });
 
 // Animate on scroll
-function scrollAnimation(element, animation, delay) {
+function scrollAnimation(element, animation, delay, percentFromTop) {
+	var percent = percentFromTop + "%";
   var $element = $(element);
   $element.css("opacity", 0);
   $element.waypoint(function() {
@@ -35,7 +36,7 @@ function scrollAnimation(element, animation, delay) {
         $element.addClass("opacity-fix");
       }, delay);
     }
-  }, { offset: "80%"});
+  }, { offset: percent});
 }
 
 //material contact form animation

@@ -32,7 +32,7 @@ header .btn {
 .header-content img {
   margin-top: 50px;
   opacity: .75;
-  @media(max-width: 900px) {
+  @media(max-width: 900px), (max-height: 700px) {
   	height: 200px;
   }	
 }
