@@ -10,24 +10,50 @@
 
 #reserve #reserve-section {
   width: 100%;
-  height: 70%;
+  height: 100%;
 }
 
-@media (max-width: 1247px) {
+@media (max-width: 1247px), (max-height: 700px) {
   #reserve {
     height: auto;
   }
 }
 
-#create-reservation {
+#create-reservation, #reservation-created {
   width: 100%;
   height: 100%;
 }
 
-@media (max-width: 1247px) {
+@media (max-width: 1247px), (max-height: 700px) {
   #create-reservation {
-    height: auto;
+    height: 100%;
   }
+}
+
+#reservation-created h1 {
+  font-size: 4em;
+}
+
+#reservation-created p {
+  font-size: 2.5em;
+}
+
+@media (max-width: 991px), (max-height: 700px) {
+  #create-form {
+    margin-top: 20px;
+  }
+}
+
+#error-message {
+  display: none;
+  text-align: center;
+  padding: 4px;
+  margin-bottom: 10px;
+  background-color: #e74c3c;
+}
+
+#error-message p {
+  margin: 0;
 }
 
 .color-blue .container-button {
@@ -62,7 +88,6 @@
 }
 
 .w-container .w-card {
-  cursor: pointer;
   background-color: #fff;
   display: inline-block;
   vertical-align: top;
@@ -177,4 +202,16 @@
 
 .w-container .w-card:hover .w-button {
   opacity: 1;
+}
+
+select {
+  /*for firefox*/
+  -moz-appearance: none;
+  /*for chrome*/
+  -webkit-appearance: none;
+}
+
+/*for IE10*/
+select::-ms-expand {
+  display: none;
 }

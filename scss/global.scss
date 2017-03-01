@@ -12,6 +12,12 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
+.move-content-down {
+	@media(max-width: 991px) {
+		padding-top: 60px;
+	}
+}
+
 .row {
 	margin: 0;
 }
@@ -90,6 +96,7 @@ h6 {
 	background-color: $primary-color-text;
 	color: $primary-text-color;
 }
+
 
 @import "forms";
 

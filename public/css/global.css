@@ -7,6 +7,12 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+@media (max-width: 991px) {
+  .move-content-down {
+    padding-top: 60px;
+  }
+}
+
 .row {
   margin: 0;
 }
@@ -104,6 +110,11 @@ h6 {
   -o-transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+}
+
+.material-form .error,
+.material-form .error.focus {
+  border: solid 2px #e74c3c !important;
 }
 
 .material-form .input-block.focus {
@@ -251,6 +262,13 @@ h6 {
   padding: 5px 15px;
 }
 
+@media (max-width: 769px) {
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    background-color: #009688;
+    border: none;
+  }
+}
+
 footer {
   height: 200px;
   width: 100%;
@@ -286,6 +304,7 @@ footer {
 
 .social-media ul {
   list-style: none;
+  padding: 0;
 }
 
 .social-media ul li {
