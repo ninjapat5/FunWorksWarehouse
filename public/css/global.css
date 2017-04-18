@@ -112,6 +112,11 @@ h6 {
   transition: all 0.3s ease-out;
 }
 
+.material-form .error,
+.material-form .error.focus {
+  border: solid 2px #e74c3c !important;
+}
+
 .material-form .input-block.focus {
   background-color: #FFFFFF;
   border: solid 2px #448AFF;
