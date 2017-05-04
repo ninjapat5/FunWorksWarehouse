@@ -1,3 +1,19 @@
+<?php
+
+	$con = mysqli_connect('localhost','root','','fw');
+
+	$FirstName = $_POST['first-name'];
+	$LastName = $_POST['last-name'];
+	$Email = $_POST['email'];
+	$People = $_POST['people'];
+	$Date1 = $_POST['date'];
+	$Time1 = $_POST['time'];
+
+	$sql = "INSERT INTO reservation (FirstName,LastName,Email,People,Date1,Time1) VALUES ('$FirstName','$LastName','$Email','$People','$Date1','$Time1')";
+
+	mysqli_query($con,$sql)
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -23,7 +39,7 @@
       <meta name="msapplication-TileColor" content="#009688">
       <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
       <meta name="theme-color" content="#009688">
-      <title>FunWorks Warehouse</title>
+      <title>FunWorks Warehouse | Make a Reservation | Reservation Created</title>
       <!--Custom Fonts-->
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Bangers">
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400">
@@ -36,19 +52,19 @@
       <!--Global Styles-->
       <link rel="stylesheet" type="text/css" href="css/global.css">
       <!--Page specific styles-->
-      <link rel="stylesheet" type="text/css" href="css/home.css">
+      <link rel="stylesheet" type="text/css" href="css/reserve.css">
     </head>
-  <body>
-        <nav class="navbar navbar-default navbar-fixed-top affix-top" id="mainNav">
+  <body class="move-content-down">
+        <nav class="navbar navbar-default navbar-fixed-top affix">
               <div class="container-fluid">
                 <div class="navbar-header">
                   <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><span class="sr-only">Toggle navigation</span>Menu <i class="fa fa-bars"></i></button><a class="navbar-brand" href="index.html"><img src="img/small-logo.png"></a>
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
-                          <li class="active-tab"><a href="index.html">Home</a></li>
+                          <li><a href="index.html">Home</a></li>
                           <li><a href="activities.html">Activities</a></li>
-                          <li><a href="reserve.html">Reserve</a></li>
+                          <li class="active-tab"><a href="reserve.html">Reserve</a></li>
                   </ul>
                   <ul class="nav navbar-nav navbar-right">
                           <li><a href="about.html">About</a></li>
@@ -57,58 +73,14 @@
                 </div>
               </div>
         </nav>
-    <header class="v-align-parent" id="home-header">
-      <div class="header-content v-align-child">
-        <div class="header-content-inner"><img src="img/large-logo.png">
-          <div id="home-learn-more" style="opacity: 0;">
-            <h1 class="text-center">Fun for the whole family!</h1><a class="btn btn-primary btn-lg" href="#home-activities">Learn More</a>
-          </div>
+    <div class="section-primary-color v-align-parent" id="reservation-created">
+      <div class="v-align-child">
+        <div class="container text-center">
+          <h1>Reservation Created!</h1>
+          <p>We'll see you soon!</p><a class="btn btn-primary btn-lg" href="index.html">Home</a>
         </div>
       </div>
-    </header>
-    <section class="section-primary-color v-align-parent" id="home-activities">
-      <div class="container v-align-child">
-        <div class="row">
-          <div class="col-lg-6 text-center" id="home-activities-text"><br><br><br>
-            <h1 class="section-heading">The most fun warehouse in the world, guaranteed.</h1>
-            <hr class="light">
-            <p>
-              Here at FunWorks Warehouse we make sure that there are activities for all ages.
-              From go-karts, to laser tag, to arcade games, there is bound to be something fun for each and every family member.
-            </p><br><br><a class="btn btn-primary btn-lg" href="activities.html">View Activites</a><br><br>
-          </div>
-          <div class="col-lg-6" id="home-activities-img"><img class="img-responsive img-thumbnail" src="img/home-arcade.jpg" alt=""></div>
-        </div>
-        <div class="scroll-down" id="home-about-scroll"><a href="#home-about"><i class="fa fa-chevron-down light-text" aria-hidden="true"></i></a></div>
-      </div>
-    </section>
-    <section class="section-light v-align-parent" id="home-about">
-      <div class="container v-align-child">
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2 text-center">
-            <h1 id="home-about-header">Want to find out more about us?</h1><br>
-            <hr class="hr-dark" id="home-about-hr">
-            <div class="row">
-              <div class="col-md-4">
-                <div id="home-about-flag"><br><br><i class="fa fa-flag"></i>
-                  <p>Go check out our about page</p><a class="btn btn-default btn-lg" href="about.html">About</a><br><br>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div id="home-about-packages"><br><br><i class="fa fa-users"></i>
-                  <p>Make reservations and view party packages</p><a class="btn btn-default btn-lg" href="reserve.html">Reserve</a><br><br>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div id="home-about-card"><br><br><i class="fa fa-address-card"></i>
-                  <p>Feel free to contact us with any questions</p><a class="btn btn-default btn-lg" href="contact.html">Contact</a><br><br>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
         <footer class="v-align-parent">
           <div class="fluid-container v-align-child">
             <div class="row">
@@ -144,6 +116,5 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.waypoints.min.js"></script>
         <script src="js/global-scripts.js"></script>
-        <script src="js/animations/home-animations.js"></script>
   </body>
 </html>
